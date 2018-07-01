@@ -1,0 +1,240 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    tools:context=".SignUpActivity">
+
+<!--    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize" />-->
+
+    <LinearLayout
+        android:id="@+id/nav_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:orientation="vertical"
+        android:background="@android:color/transparent"
+        android:visibility="visible">
+<!--//transparent-->
+        <Button
+            android:id="@+id/back_button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ic_back_button" />
+    </LinearLayout>
+
+
+    <!-- Sign Up progress -->
+    <LinearLayout
+        android:id="@+id/evercam_logo_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:layout_below="@+id/nav_bar">
+
+        <ImageView
+            android:id="@+id/ic_logoImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_logo" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/signup_status"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="35dp"
+            android:layout_height="35dp" />
+
+        <TextView
+            android:id="@+id/signup_status_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="@string/login_progress_signing_up" />
+    </LinearLayout>
+
+    <!-- Sign up form -->
+    <ScrollView
+        android:id="@+id/signup_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/evercam_logo_layout">
+
+        <android.support.percent.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal">
+
+            <LinearLayout
+                style="@style/SignupFormContainer"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                app:layout_widthPercent="95%">
+
+                <LinearLayout style="@style/SignUpLineLayout">
+
+<!--                    <TextView
+                        android:id="@+id/forename_txt"
+                        style="@style/SignUpRegularText"
+                        android:text="@string/firstname_colon"
+                        android:visibility="gone" />-->
+
+                    <EditText
+                        android:id="@+id/forename_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/firstName"
+                        android:inputType="text"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/SignUpLineLayout">
+
+<!--                    <TextView
+                        android:id="@+id/lastname_txt"
+                        style="@style/SignUpRegularText"
+                        android:text="@string/lastname_colon"
+                        android:visibility="gone" />-->
+
+                    <EditText
+                        android:id="@+id/lastname_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/lastName"
+                        android:inputType="text"
+                        android:singleLine="true"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/SignUpLineLayout">
+
+<!--                    <TextView
+                        android:id="@+id/username_txt"
+                        style="@style/SignUpRegularText"
+                        android:text="@string/username_colon"
+                        android:visibility="gone" />-->
+
+                    <EditText
+                        android:id="@+id/username_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/username"
+                        android:inputType="text"
+                        android:singleLine="true"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/SignUpLineLayout">
+
+<!--                    <TextView
+                        android:id="@+id/email_txt"
+                        style="@style/SignUpRegularText"
+                        android:text="@string/email_colon"
+                        android:visibility="gone" />-->
+
+                    <EditText
+                        android:id="@+id/email_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/email"
+                        android:inputType="textEmailAddress"
+                        android:singleLine="true"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/SignUpLineLayout">
+
+<!--                    <TextView
+                        android:id="@+id/password_txt"
+                        style="@style/SignUpRegularText"
+                        android:text="@string/password_colon"
+                        android:visibility="gone" />-->
+
+                    <EditText
+                        android:id="@+id/password_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:hint="@string/password"
+                        android:inputType="textPassword"
+                        android:singleLine="true"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <!--<EditText
+                    android:id="@+id/repassword_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="sans-serif"
+                    android:hint="@string/re_password"
+                    android:inputType="textPassword"
+                    android:singleLine="true"
+                    android:textSize="16sp"
+                    android:visibility="gone" />-->
+
+                <Button
+                    android:id="@+id/sign_up_button"
+                    style="@style/ButtonRegular.Lowercase"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="55dp"
+                    android:text="@string/create_account" />
+
+                <LinearLayout style="@style/SignUpLineLayout">
+                    <EditText
+                        android:id="@+id/cardholderName"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@android:color/transparent"
+                        android:editable="false"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center"
+                        android:imeOptions="actionNext"
+                        android:singleLine="true"
+                        android:text="By creating an account, I accept the"
+                        android:textAllCaps="false" />
+
+                </LinearLayout>
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <Button
+                        android:id="@+id/term_of_Use"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:layout_centerInParent="true"
+                        android:text="@string/term_of_use"
+                        android:textAllCaps="false"
+                        android:textColor="#418CC8"
+                        android:textSize="18sp" />
+
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+        </android.support.percent.PercentRelativeLayout>
+    </ScrollView>
+</RelativeLayout>

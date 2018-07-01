@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/home_container"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <ImageView
+        android:id="@+id/bg_Image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/signout_bg"/>
+
+    <io.evercam.androidapp.onboarding.IntroTextureView
+        android:id="@+id/intro_texture_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_margin="20dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_welcome_signup"
+            style="@style/ButtonLight.Lowercase"
+            android:layout_width="0dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:text="@string/welcome_create_account"
+            android:visibility="gone" />
+
+        <Button
+            android:text="@string/welcome_sign_in"
+            android:id="@+id/btn_welcome_login"
+            android:background="@drawable/btn_selector"
+            android:layout_marginTop="10dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            style="@style/ButtonRegular.Lowercase" />
+
+    </LinearLayout>
+
+</FrameLayout>

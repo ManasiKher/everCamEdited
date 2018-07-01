@@ -1,0 +1,31 @@
+language: android
+
+jdk: oraclejdk8
+env:
+  matrix:
+    - ANDROID_TARGET=android-19  ANDROID_ABI=armeabi-v7a
+  global:
+    - MALLOC_ARENA_MAX=2
+
+android:
+  components:
+    - tools
+    - android-26
+    - build-tools-26.0.2
+    - extra-google-google_play_services
+    - extra-android-support
+    - extra-android-m2repository
+    - extra-google-m2repository
+    - sys-img-armeabi-v7a-android-26
+
+sudo: required
+
+before_install:
+    - chmod +x gradlew
+    - mv release.properties.sample release.properties
+
+script:
+  - ./gradlew assembleDebug
+  
+notifications:
+  email: false

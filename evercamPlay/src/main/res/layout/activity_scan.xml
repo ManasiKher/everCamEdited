@@ -1,0 +1,104 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context=".ScanActivity">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize" />
+
+    <RelativeLayout
+        android:layout_below="@+id/tool_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <!-- Scan Result -->
+        <RelativeLayout
+            android:id="@+id/scan_result_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <ListView
+                android:id="@+id/scan_result_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@drawable/divider_with_margin"
+                android:footerDividersEnabled="false" />
+
+        </RelativeLayout>
+
+        <ProgressBar
+            android:id="@+id/horizontal_progress_bar"
+            style="@android:style/Widget.DeviceDefault.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-8dp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <!-- Scan progress -->
+        <LinearLayout
+            android:id="@+id/scan_status_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/scan_status_message"
+                style="@style/DarkText"
+                android:layout_marginBottom="16dp"
+                android:gravity="center"
+                android:text="@string/msg_scanning"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        </LinearLayout>
+
+        <!-- No Camera Found -->
+        <LinearLayout
+            android:id="@+id/scan_result_no_camera_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/scan_result_message"
+                android:layout_marginBottom="16dp"
+                style="@style/TextAppearance.AppCompat.Body2.Dark"
+                android:gravity="center"
+                android:text="@string/msg_no_camera_found"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp" />
+
+            <Button
+                android:id="@+id/button_connect_wifi"
+                style="@style/TextButtonNoBackground"
+                android:layout_marginBottom="4dp"
+                android:text="@string/btn_text_connect_wifi" />
+
+            <Button
+                android:id="@+id/button_add_camera_manually"
+                style="@style/TextButtonNoBackground"
+                android:layout_marginBottom="4dp"
+                android:text="@string/btn_text_add_manually" />
+
+            <Button
+                android:id="@+id/button_show_all_devices"
+                style="@style/TextButtonNoBackground"
+                android:text="@string/menu_show_all_device" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

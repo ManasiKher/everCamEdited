@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "461613501728",
+    "firebase_url": "https://evercam-46b7d.firebaseio.com",
+    "project_id": "evercam-46b7d",
+    "storage_bucket": "evercam-46b7d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:461613501728:android:30af1ab0e8aef2b0",
+        "android_client_info": {
+          "package_name": "io.evercam.androidapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "521613501728-kulo4d312s0ee5jq05mg9ig866e9kr0b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCCiYMJ4hSC44n0BH5gLW0SmwU6HA4f0Ml"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

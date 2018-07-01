@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="io.evercam.androidapp"
+    android:versionCode="227"
+    android:versionName="2.1.6">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- Cache requires it. -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- Only used for auto filling user's profile when create account -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+
+    <!-- For creating camera shortcut on home screen -->
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+
+    <!-- Necessary for authentication -->
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <!-- Necessary for authentication - remove account -->
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <!-- For camera list synchronizing -->
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_SYNC_STATS" />
+
+    <!-- Need location access for public cameras -->
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+
+    <!-- Allow Intercom GCM notifications -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!--Optional permissions for intercom-->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MANAGE_DOCUMENTS"/>
+
+    <application
+        android:name=".EvercamPlayApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/icon_evercam_play"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_api_key_maps" />
+        <meta-data
+            android:name="com.mixpanel.android.MPConfig.ResourcePackageName"
+            android:value="io.evercam.androidapp" />
+
+        <provider
+            android:name=".sync.DummyProvider"
+            android:authorities="@string/content_provider_authorities"
+            android:label="Cameras"
+            android:syncable="true" />
+
+        <service android:name=".authentication.EvercamAuthenticatorService">
+            <intent-filter>
+                <action android:name="android.accounts.AccountAuthenticator" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.accounts.AccountAuthenticator"
+                android:resource="@xml/authentication" />
+        </service>
+        <service
+            android:name=".sync.CameraListSyncService"
+            android:exported="true"
+            android:process=":sync">
+            <intent-filter>
+                <action android:name="android.content.SyncAdapter" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.content.SyncAdapter"
+                android:resource="@xml/sync_adapter" />
+        </service>
+
+        <service android:name=".AppIndexingService"
+            android:exported="true"
+            android:permission="com.google.android.gms.permission.APPINDEXING">
+            <intent-filter>
+                <action android:name="com.google.firebase.appindexing.UPDATE_INDEX" />
+            </intent-filter>
+        </service>
+
+        <!-- Theme.Black.NoTitleBar previous value -->
+        <meta-data
+            android:name="com.google.android.gms.analytics.globalConfigResource"
+            android:resource="@xml/app_tracker" />
+
+        <activity
+            android:name=".video.VideoActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label=""
+            android:screenOrientation="unspecified">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <!-- Accepts URIs that begin with "evercam://cameras/streams” -->
+                <data
+                    android:host="@string/data_host"
+                    android:pathPrefix="@string/data_path"
+                    android:scheme="@string/data_scheme" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".CamerasActivity" />
+        </activity>
+        <activity
+            android:name=".OnBoardingActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".SignUpActivity"
+            android:label="@string/title_activity_sign_up"
+            android:parentActivityName=".OnBoardingActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ManageAccountsActivity"
+            android:label="@string/title_activity_accounts" />
+        <activity
+            android:name=".CamerasActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label=""
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".CameraPrefsActivity"
+            android:label="@string/title_settings" />
+        <activity
+            android:name=".EditCameraActivity"
+            android:label="@string/title_edit_camera"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".addeditcamera.AddCameraActivity"
+            android:label="@string/title_choose_model"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ViewCameraActivity"
+            android:label="@string/title_activity_view_camera"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ScanActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="" />
+        <activity
+            android:name=".ReleaseNotesActivity"
+            android:label="@string/title_release_notes" />
+        <activity
+            android:name=".recordings.RecordingWebActivity"
+            android:configChanges="keyboard|keyboardHidden|screenSize|orientation"
+            android:label="@string/title_activity_recording_web">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".video.VideoActivity" />
+        </activity>
+        <activity
+            android:name=".publiccameras.PublicCamerasWebActivity"
+            android:configChanges="keyboard|keyboardHidden|screenSize|orientation"
+            android:icon="@drawable/icon_evercam"
+            android:label="@string/title_activity_public_cameras" />
+        <activity
+            android:name=".SimpleWebActivity"
+            android:configChanges="keyboard|keyboardHidden|screenSize|orientation"
+            android:label="@string/title_activity_about_web">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:label="Test Multi Camera View"
+                android:value=".video.VideoActivity" />
+        </activity>
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="70e87b744f3bc2c7db518b88faf93411823b45b2" />
+
+        <activity
+            android:name=".photoview.ViewPagerActivity"
+            android:label="@string/title_saved_images" />
+        <activity
+            android:name=".sharing.SharingActivity"
+            android:label="@string/title_sharing" />
+        <activity
+            android:name=".sharing.CreateShareActivity"
+            android:label="@string/title_create_sharing" />
+        <activity
+            android:name=".scan.AllDevicesActivity"
+            android:label="@string/title_all_devices" />
+        <activity
+            android:name=".EditCameraLocationActivity"
+            android:label="@string/edit_camera_location" />
+
+        <activity
+            android:name=".DeepLinkedActivity"
+            android:launchMode="singleTop"
+            ><!-- ATTENTION: This intent was auto-generated. Follow instructions at
+  https://g.co/AppIndexing/AndroidStudio to publish your URLs. -->
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- ATTENTION: This data URL was auto-generated. We recommend that you use the HTTP scheme.
+                  TODO: Change the host or pathPrefix as necessary. -->
+                <data
+                    android:host="evercam.io"
+                    android:pathPrefix="/gpocam"
+                    android:scheme="http" />
+                <data
+                    android:host="evercam.io"
+                    android:pathPrefix="/gpocam"
+                    android:scheme="https" />
+                <!--<data-->
+                    <!--android:host="evercam.io/public/cameras"-->
+                    <!--android:pathPattern="/.*"-->
+                    <!--android:scheme="http" />-->
+                <!--<data-->
+                    <!--android:host="evercam.io/public/cameras"-->
+                    <!--android:pathPattern="/.*"-->
+                    <!--android:scheme="https" />-->
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

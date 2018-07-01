@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Add camera view flip styles-->
+    <style name="AddCameraViewFlipTopLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+
+    <style name="TextAppearance.AppCompat.Gray">
+        <item name="android:textColor">@color/secondaryText</item>
+    </style>
+
+    <style name="SingleLineEditText">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/primaryText</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="SingleLineEditText.Text">
+        <item name="android:inputType">text</item>
+    </style>
+
+    <style name="SingleLineEditText.Number">
+        <item name="android:inputType">number</item>
+    </style>
+
+    <style name="TextInputLayoutLight">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="hintTextAppearance">@style/TextAppearance.AppCompat.Gray</item>
+    </style>
+
+    <style name="EditTextError" parent="@style/TextAppearance.AppCompat.Gray">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="CheckSnapshotButtonPlaceholder" parent="ButtonLight">
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+    </style>
+
+    <style name="PortAndPathLineLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">bottom</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="PortLineLayout">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">0.48</item>
+    </style>
+
+    <style name="PathLineLayout">
+        <item name="android:gravity">bottom</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">0.52</item>
+    </style>
+
+    <style name="SingleCharacterText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">6dp</item>
+        <item name="android:layout_marginLeft">2dp</item>
+        <item name="android:layout_marginRight">2dp</item>
+        <item name="android:textColor">@color/primaryText</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <!-- Add/Edit camera details styles-->
+    <style name="AddEditCameraItemRowLayout">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="AddEditCameraItemRowItemText">
+        <item name="android:layout_width">100sp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="SingleLineEditText.AddEditCameraItemRowItemEditText">
+
+        <item name="android:layout_marginRight">25dp</item>
+    </style>
+
+    <style name="SingleLineEditText.AddEditCameraItemRowItemEditText.Text">
+        <item name="android:inputType">text</item>
+    </style>
+
+    <style name="SingleLineEditText.AddEditCameraItemRowItemEditText.Number">
+        <item name="android:inputType">number</item>
+    </style>
+
+    <style name="AddEditCameraStatus">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginRight">4dp</item>
+    </style>
+
+    <style name="AddEditCameraStatus.WithinTextInputLayout">
+        <item name="android:layout_centerVertical">false</item>
+        <item name="android:layout_marginTop">24dp</item>
+    </style>
+
+    <style name="QuestionMarkImage">
+        <item name="android:layout_width">25dp</item>
+        <item name="android:layout_height">25dp</item>
+        <item name="android:padding">3dp</item>
+        <item name="android:src">@drawable/ic_question</item>
+        <item name="android:tint">@color/secondaryText</item>
+        <item name="android:layout_marginLeft">3dp</item>
+        <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
+    </style>
+
+    <style name="PortCheckProgressBar">
+        <item name="android:layout_width">20dp</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:indeterminateOnly">true</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+
+</resources>

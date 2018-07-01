@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:orientation="vertical">
+
+            <fragment
+                android:name="io.evercam.androidapp.addeditcamera.ModelSelectorFragment"
+                android:id="@+id/model_selector_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:id="@+id/add_camera_id_layout"
+                style="@style/AddEditCameraItemRowLayout"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/add_id_txt"
+                    style="@style/AddEditCameraItemRowItemText"
+                    android:text="@string/evercam_id" />
+
+                <TextView
+                    android:id="@+id/add_id_txt_view"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/primaryText"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/AddEditCameraItemRowLayout">
+
+                <TextView
+                    android:id="@+id/add_name_txt"
+                    style="@style/AddEditCameraItemRowItemText"
+                    android:text="@string/friendly_name" />
+
+                <EditText
+                    android:id="@+id/add_name_edit"
+                    style="@style/SingleLineEditText.AddEditCameraItemRowItemEditText.Text"
+                    android:hint="@string/hint_name" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/AddEditCameraItemRowLayout">
+
+                <TextView
+                    android:id="@+id/add_external_host_txt"
+                    style="@style/AddEditCameraItemRowItemText"
+                    android:text="@string/external_host" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <io.evercam.androidapp.custom.PortCheckEditText
+                        android:id="@+id/add_external_host_edit"
+                        style="@style/SingleLineEditText.AddEditCameraItemRowItemEditText.Text"
+                        android:hint="@string/hint_external_host" />
+
+                    <LinearLayout
+                        style="@style/AddEditCameraStatus"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/ip_explanation_btn"
+                            style="@style/QuestionMarkImage" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/AddEditCameraItemRowLayout">
+
+                <TextView
+                    android:id="@+id/add_external_http_txt"
+                    style="@style/AddEditCameraItemRowItemText"
+                    android:text="@string/http_port" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <io.evercam.androidapp.custom.PortCheckEditText
+                        android:id="@+id/add_external_http_edit"
+                        style="@style/SingleLineEditText.AddEditCameraItemRowItemEditText.Number"
+                        android:hint="@string/hint_external_http" />
+
+                    <LinearLayout
+                        style="@style/AddEditCameraStatus"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ProgressBar
+                                android:id="@+id/progress_bar_http"
+                                style="@style/PortCheckProgressBar"
+                                android:visibility="gone" />
+
+                            <TextView
+                                android:id="@+id/port_status_text_http"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:visibility="gone" />
+
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/http_explanation_btn"
+                            style="@style/QuestionMarkImage" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/add_jpg_url_layout"
+                style="@style/AddEditCameraItemRowLayout">
+
+                <TextView
+                    android:id="@+id/add_jpg_url_txt"
+                    style="@style/AddEditCameraItemRowItemText"
+                    android:text="@string/jpg_url" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/add_jpg_edit"
+                        style="@style/SingleLineEditText.AddEditCameraItemRowItemEditText.Text"
+                        android:hint="@string/hint_jpg_path" />
+
+                    <LinearLayout
+                        style="@style/AddEditCameraStatus"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/jpg_explanation_btn"
+                            style="@style/QuestionMarkImage" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout style="@style/AddEditCameraItemRowLayout">
+
+                <TextView
+                    android:id="@+id/add_external_rtsp_txt"
+                    style="@style/AddEditCameraItemRowItemText"
+                    android:text="@string/rtsp_port" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <io.evercam.androidapp.custom.PortCheckEditText
+                        android:id="@+id/add_external_rtsp_edit"
+                        style="@style/SingleLineEditText.AddEditCameraItemRowItemEditText.Number"
+                        android:hint="@string/hint_external_rtsp" />
+
+                    <LinearLayout
+                        style="@style/AddEditCameraStatus"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ProgressBar
+                                android:id="@+id/progress_bar_rtsp"
+                                style="@style/PortCheckProgressBar"
+                                android:visibility="gone" />
+
+                            <TextView
+                                android:id="@+id/port_status_text_rtsp"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:visibility="gone" />
+
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/rtsp_port_explanation_btn"
+                            style="@style/QuestionMarkImage" />
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/add_rtsp_url_layout"
+                style="@style/AddEditCameraItemRowLayout">
+
+                <TextView
+                    android:id="@+id/add_rtsp_url_txt"
+                    style="@style/AddEditCameraItemRowItemText"
+                    android:text="@string/rtsp_url" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/add_rtsp_edit"
+                        style="@style/SingleLineEditText.AddEditCameraItemRowItemEditText.Text"
+                        android:hint="@string/hint_rtsp_path" />
+
+                    <LinearLayout
+                        style="@style/AddEditCameraStatus"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/rtsp_url_explanation_btn"
+                            style="@style/QuestionMarkImage" />
+
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout style="@style/AddEditCameraItemRowLayout">
+
+                <TextView
+                    android:id="@+id/credentials_txt"
+                    style="@style/AddEditCameraItemRowItemText"
+                    android:text="@string/credentials" />
+
+                <EditText
+                    android:id="@+id/add_username_edit"
+                    android:layout_width="120sp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_username"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/add_colon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20sp"
+                    android:text="@string/colon"
+                    android:textColor="@color/primaryText"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/add_password_edit"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_camera_password"
+                    android:singleLine="true"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/AddEditCameraItemRowLayout"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp">
+
+                <Button
+                    android:id="@+id/button_add_edit_camera"
+                    style="@style/ButtonLight"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="0sp"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_weight=".75" />
+
+                <Button
+                    android:id="@+id/button_test_snapshot"
+                    style="@style/ButtonRegular"
+                    android:layout_width="0sp"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight=".25"
+                    android:text="@string/test" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

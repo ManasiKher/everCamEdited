@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="msg_scanning">Scanning for cameras&#8230;</string>
+    <string name="msg_no_camera_found">No cameras were found\n in your local network</string>
+    <string name="msg_specify_camera_model">What\'s the camera model?</string>
+    <string name="msg_report_camera_model">Send us the camera model name and we will work on it :)</string>
+    <string name="hint_camera_model">Hikvision DS-2CD2332-I</string>
+    <string name="btn_text_add_manually">Add camera manually</string>
+    <string name="btn_text_connect_wifi">WiFi Settings</string>
+    <string name="report_camera">This is a Camera</string>
+
+    <!-- Scan result labels-->
+    <string name="label_ip">IP</string>
+    <string name="label_vendor">VENDOR</string>
+    <string name="label_model">MODEL</string>
+    <string name="label_http">HTTP</string>
+    <string name="label_rtsp">RTSP</string>
+    <string name="label_auth">AUTH</string>
+    <string name="label_evercam">EVERCAM</string>
+
+</resources>

@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout style="@style/ViewCameraItemRowLayout">
+
+<!--                <TextView
+                    android:id="@+id/view_name_txt"
+                    style="@style/ViewCameraItemRowItemText"
+                    android:text="@string/view_friendly_name" />-->
+
+                <TextView
+                    android:id="@+id/view_name_value"
+                    style="@style/CameraNameItemValueText" />
+            </LinearLayout>
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5sp">
+
+                <LinearLayout
+                    android:id="@+id/vendor_model_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/model_thumbnail_image_view"
+                        android:layout_width="0sp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="2"
+                        android:background="@color/white"
+                        android:paddingBottom="5sp"
+                        android:paddingTop="10sp"
+                        android:src="@drawable/thumbnail_placeholder" />
+
+                    <LinearLayout
+                        android:layout_width="0sp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5sp"
+                        android:layout_marginTop="10sp"
+                        android:layout_weight="3"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5sp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/vendor_txt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="20sp"
+                                android:layout_marginLeft="7sp"
+                                android:text="@string/vendor"
+                                android:textSize="16sp"
+                                android:textColor="@color/secondaryText"/>
+
+                            <TextView
+                                android:id="@+id/view_vendor_value"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="7sp"
+                                android:textSize="16sp"
+                                android:textColor="@color/primaryText"
+                                />
+
+                            <!--<Spinner-->
+                                <!--android:id="@+id/vendor_spinner"-->
+                                <!--android:layout_width="fill_parent"-->
+                                <!--android:layout_height="wrap_content" />-->
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="3dp"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/model_txt"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="20sp"
+                                    android:layout_marginLeft="7sp"
+                                    android:layout_marginTop="2dp"
+                                    android:text="@string/model"
+                                    android:textSize="16sp"
+                                    android:textColor="@color/secondaryText"/>
+
+                                <!--<ImageView-->
+                                    <!--android:id="@+id/model_explanation_btn"-->
+                                    <!--style="@style/QuestionMarkImage" />-->
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/view_model_value"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="7sp"
+                                android:textSize="16sp"
+                                android:textColor="@color/primaryText"/>
+
+                            <!--<Spinner-->
+                                <!--android:id="@+id/model_spinner"-->
+                                <!--android:layout_width="fill_parent"-->
+                                <!--android:layout_height="wrap_content" />-->
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- Make the logo image view out of the proportion LinearLayout -->
+                <!-- Because adjustViewBounds doesn't take effect with LinearLayout's 'weight' -->
+                <ImageView
+                    android:id="@+id/vendor_logo_image_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxHeight="15dp"
+                    android:adjustViewBounds="true"
+                    android:paddingLeft="2dp"
+                    android:paddingTop="2dp" />
+            </RelativeLayout>
+
+            <!--<LinearLayout style="@style/ViewCameraItemRowLayout">-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/view_vendor_txt"-->
+                    <!--style="@style/ViewCameraItemRowItemText"-->
+                    <!--android:text="@string/view_vendor" />-->
+
+                <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:id="@+id/view_vendor_value"&ndash;&gt;-->
+                    <!--&lt;!&ndash;style="@style/ViewCameraItemRowItemValueText" />&ndash;&gt;-->
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout style="@style/ViewCameraItemRowLayout">-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/view_model_txt"-->
+                    <!--style="@style/ViewCameraItemRowItemText"-->
+                    <!--android:text="@string/view_model" />-->
+
+                <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:id="@+id/view_model_value"&ndash;&gt;-->
+                    <!--&lt;!&ndash;style="@style/ViewCameraItemRowItemValueText" />&ndash;&gt;-->
+            <!--</LinearLayout>-->
+
+            <LinearLayout
+                android:id="@+id/can_edit_detail_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+            <LinearLayout style="@style/MapCameraItemRowLayout">
+
+                <fragment
+                    android:id="@+id/map"
+                    class="com.google.android.gms.maps.SupportMapFragment"
+                    android:name="io.evercam.androidapp.MapFragment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/LocationButtonItemRowLayout">
+
+                <RelativeLayout
+                    android:id="@+id/locationBtnRelativeLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dp">
+
+                    <Button
+                        android:id="@+id/locationButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="Edit Location"
+                        android:textAllCaps="false"
+                        android:layout_alignParentRight="true"
+                        android:background="@android:color/transparent"
+                        android:textColor="@color/evercam_blue"
+                        android:textSize="16sp"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+<!--            <LinearLayout style="@style/ViewCameraItemRowLayout">
+
+                <TextView
+                    android:id="@+id/view_owner_txt"
+                    style="@style/ViewCameraItemRowItemText"
+                    android:text="@string/view_owner" />
+
+                <TextView
+                    android:id="@+id/view_owner_value"
+                    style="@style/ViewCameraItemRowItemValueText" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/ViewCameraItemRowLayout">
+
+                <TextView
+                    android:id="@+id/view_timezone_txt"
+                    style="@style/ViewCameraItemRowItemText"
+                    android:text="@string/view_timezone" />
+
+                <TextView
+                    android:id="@+id/view_timezone_value"
+                    style="@style/ViewCameraItemRowItemValueText" />
+            </LinearLayout>-->
+
+            <!--<LinearLayout style="@style/ViewCameraItemRowLayout">
+
+                <TextView
+                    android:id="@+id/view_vendor_txt"
+                    style="@style/ViewCameraItemRowItemText"
+                    android:text="@string/view_vendor" />
+
+                <TextView
+                    android:id="@+id/view_vendor_value"
+                    style="@style/ViewCameraItemRowItemValueText" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/ViewCameraItemRowLayout">
+
+                <TextView
+                    android:id="@+id/view_model_txt"
+                    style="@style/ViewCameraItemRowItemText"
+                    android:text="@string/view_model" />
+
+                <TextView
+                    android:id="@+id/view_model_value"
+                    style="@style/ViewCameraItemRowItemValueText" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/can_edit_detail_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">-->
+
+                <!--<LinearLayout style="@style/ViewCameraItemRowLayout">
+
+                    <TextView
+                        android:id="@+id/view_username_txt"
+                        style="@style/ViewCameraItemRowItemText"
+                        android:text="@string/view_username" />
+
+                    <TextView
+                        android:id="@+id/view_username_value"
+                        style="@style/ViewCameraItemRowItemValueText" />
+
+                </LinearLayout>
+
+                <LinearLayout style="@style/ViewCameraItemRowLayout">
+
+                    <TextView
+                        android:id="@+id/view_password_txt"
+                        style="@style/ViewCameraItemRowItemText"
+                        android:text="@string/view_password" />
+
+                    <TextView
+                        android:id="@+id/view_password_value"
+                        style="@style/ViewCameraItemRowItemValueText" />
+
+                </LinearLayout>
+
+                <LinearLayout style="@style/ViewCameraItemRowLayout">
+
+                    <TextView
+                        android:id="@+id/view_jpg_url_txt"
+                        style="@style/ViewCameraItemRowItemText"
+                        android:text="@string/view_snapshot_url" />
+
+                    <TextView
+                        android:id="@+id/view_jpg_url_value"
+                        style="@style/ViewCameraItemRowItemValueText" />
+                </LinearLayout>-->
+
+ <!--               <LinearLayout style="@style/ViewCameraItemRowLayout">
+
+                    <TextView
+                        android:id="@+id/view_rtsp_url_txt"
+                        style="@style/ViewCameraItemRowItemText"
+                        android:text="@string/view_rtsp_url" />
+
+                    <TextView
+                        android:id="@+id/view_rtsp_url_value"
+                        style="@style/ViewCameraItemRowItemValueText" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/external_title_textview"
+                    style="@style/ViewCameraTitleItemText"
+                    android:text="@string/external_title" />
+
+                <View style="@style/DividerWithMargin"/>
+
+                <LinearLayout style="@style/ViewCameraItemRowLayout">
+
+                    <TextView
+                        android:id="@+id/view_external_host_txt"
+                        style="@style/ViewCameraItemRowItemText"
+                        android:text="@string/view_host" />
+
+                    <TextView
+                        android:id="@+id/view_external_host_value"
+                        style="@style/ViewCameraItemRowItemValueText" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/ViewCameraItemRowLayout">
+
+                    <TextView
+                        android:id="@+id/view_external_http_txt"
+                        style="@style/ViewCameraItemRowItemText"
+                        android:text="@string/view_http" />
+
+                    <TextView
+                        android:id="@+id/view_external_http_value"
+                        style="@style/ViewCameraItemRowItemValueText" />
+                </LinearLayout>-->
+
+<!--                <LinearLayout style="@style/ViewCameraItemRowLayout">
+
+                    <TextView
+                        android:id="@+id/view_external_rtsp_txt"
+                        style="@style/ViewCameraItemRowItemText"
+                        android:text="@string/view_rtsp" />
+
+                    <TextView
+                        android:id="@+id/view_external_rtsp_value"
+                        style="@style/ViewCameraItemRowItemValueText" />
+                </LinearLayout>-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/internal_title_textview"-->
+                    <!--style="@style/ViewCameraTitleItemText"-->
+                    <!--android:text="@string/internal_title" />-->
+
+                <!--<View style="@style/DividerWithMargin"/>-->
+
+                <!--<LinearLayout style="@style/ViewCameraItemRowLayout">-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/view_internal_host_txt"-->
+                        <!--style="@style/ViewCameraItemRowItemText"-->
+                        <!--android:text="@string/view_host" />-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/view_internal_host_value"-->
+                        <!--style="@style/ViewCameraItemRowItemValueText" />-->
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout style="@style/ViewCameraItemRowLayout">-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/view_internal_http_txt"-->
+                        <!--style="@style/ViewCameraItemRowItemText"-->
+                        <!--android:text="@string/view_http" />-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/view_internal_http_value"-->
+                        <!--style="@style/ViewCameraItemRowItemValueText" />-->
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                    <!--style="@style/ViewCameraItemRowLayout"-->
+                    <!--android:layout_marginBottom="10dp">-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/view_internal_rtsp_txt"-->
+                        <!--style="@style/ViewCameraItemRowItemText"-->
+                        <!--android:text="@string/view_rtsp" />-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/view_internal_rtsp_value"-->
+                        <!--style="@style/ViewCameraItemRowItemValueText" />-->
+                <!--</LinearLayout>-->
+            </LinearLayout>
+
+            <!--<LinearLayout
+                style="@style/ViewCameraItemRowLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/button_edit_camera_link"
+                    style="@style/ButtonRegular"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="@string/button_text_edit"
+                    android:visibility="gone" />
+
+            </LinearLayout>-->
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

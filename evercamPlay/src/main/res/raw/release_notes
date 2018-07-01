@@ -1,0 +1,466 @@
+<h4>Evercam IP Camera Viewer</h4>
+
+
+<h5>2.1.6</h5>
+<ul>
+    <li>- Fixed bugs.<br/></li>
+</ul>
+<br/>
+
+<b>Version 2.1.5</b>
+<ul>
+    <li><br/>- Added intercom identity verification.<br/></li>
+    <li>- Removed create account feature.<br/></li>
+</ul>
+<br/>
+
+<b>Version 2.1.4</b>
+<ul>
+    <li><br/>- Removed camera add feature.<br/></li>
+    <li>- Removed public cameras.<br/></li>
+    <li>- Removed scan for cameras feature.<br/></li>
+</ul>
+<br/>
+
+
+<b>Version 2.1.3</b>
+<ul>
+    <li><br/>- Bug fixes.<br/></li>
+    <li>- Intercom notification issue fixed.<br/></li>
+    <li>- All dependencies are updated.<br/></li>
+</ul>
+<br/>
+
+<b>Version 2.1.2</b>
+<ul>
+    <li><br/>- Application icon updated.<br/></li>
+</ul>
+<br/>
+
+<b>Version 2.1.1</b>
+<ul>
+    <li><br/>- Sign up screen updated designs<br/></li>
+</ul>
+<br/>
+
+
+<b>Version 2.1.0</b>
+<ul>
+    <li><br/>- Updated Evercam logo<br/></li>
+    <li>- By default camera per row will be 1 at application install<br/></li>
+    <li>- Show password button at sign in screen<br/></li>
+</ul>
+<br/>
+
+<b>Version 2.0.9</b>
+<ul>
+    <li><br/>- Updated ExoPlayer version to 2.2.0<br/></li>
+</ul>
+<br/>
+
+
+<b>Version 2.0.8</b>
+<ul>
+    <li><br/>- Updated ExoPlayer version to 1.5.14<br/></li>
+    <li>- Updated Firebase to 10.0.1<br/></li>
+</ul>
+<br/>
+
+<b>Version 2.0.7</b>
+<ul>
+    <li><br/>- Fixed database crash bug<br/></li>
+</ul>
+<br/>
+
+<b>Version 2.0.6</b>
+<ul>
+    <li><br/>- Added deep links<br/></li>
+    <li>- Updated camera detail page design<br/></li>
+</ul>
+<br/>
+
+<b>Version 2.0.5</b>
+<ul>
+    <li><br/>- After scanning, automatically selecting camera model<br/></li>
+    <li>- Now shows dialogue in case zero preset<br/></li>
+    <li>- Fixed creating preset error<br/></li>
+</ul>
+<br/>
+
+<b>Version 2.0.4</b>
+<ul>
+    <li><br/>- Updated sign up process<br/></li>
+</ul>
+<br/>
+
+<b>Version 2.0.3</b>
+<ul>
+    <li><br/>- Google analytics bug fixed<br/></li>
+    <li>- Fixed vendor and model selection bug<br/></li>
+</ul>
+<br/>
+
+<b>Version 2.0.2</b>
+<ul>
+    <li><br/>- Fabric analytics updated<br/></li>
+</ul>
+<br/>
+
+<b>Version 2.0.1</b>
+<ul>
+    <li><br/>- Fixed "default" value will be at top when selecting camera model<br/></li>
+    <li>- Fixed h264 url when camera model & vendor specified<br/></li>
+    <li>- Fixed Test snapshop error message handling<br/></li>
+	<li>- Fixed sign up null string error<br/></li>
+	<li>- Fixed edit camera screen bugs<br/></li>
+</ul>
+<br/>
+
+<b>Version 2.0.0</b>
+<ul>
+	<li><br/>- Firebase analytics issues fixed<br/></li>
+</ul>
+<br/>
+
+<b>Version 1.9.9</b>
+<ul>
+	<li><br/>- Firebase analytics implementation<br/></li>
+	<li>- Update test snapshot function<br/></li>
+</ul>
+<br/>
+
+<b>Version 1.9.8</b>
+<ul>
+	<li><br/>- Fixed multiple camera addition<br/></li>
+	<li>- Fixed snapshot error for some camera models<br/></li>
+</ul>
+<br/>
+
+<b>Version 1.9.7</b>
+<ul>
+	<li><br/>- Fixed sharing related issues<br/></li>
+	<li>- Replace welcome screen video<br/></li>
+</ul>
+<br/>
+
+<b>Version 1.9.6</b>
+<ul>
+	<li><br/> -Fixed signed up failure issue and login crash issue<br/></li>
+</ul>
+<br/>
+
+<b>Version 1.9.5</b>
+<ul>
+	<li><br/> -Replace welcome video with logo for KitKat and lower version<br/></li>
+</ul>
+<br/>
+
+<b>Version 1.9.4</b>
+<ul>
+	<li><br/> -Fixed the crash while clicking app version<br/></li>
+</ul>
+<br/>
+
+<b>Version 1.9.2</b>
+<ul>
+	<li>-<br/> Changed app color theme, added more material design<br/></li>
+	<li>- Bug fix around port check always showing port closed<br/></li>
+</ul>
+<br/>
+
+<b>Version 1.9.1</b>
+<ul>
+	<li><br/>- Added owner information in sharing list<br/></li>
+	<li>- Fixed incorrect error for private IP address<br/></li>
+	<li>- Added resend option for unaccepted sharing invitation<br/></li>
+    <li>- Improved UI for offline cameras<br/></li>
+    <li>- Fixed the issue of unable to load cloud recording<br/></li>
+</ul>
+<br/>
+
+<b>Version 1.9.0</b>
+<ul>
+	<li><br/>- Improved port check while adding camera<br/></li>
+	<li>- Fixed incorrect error for private IP address<br/></li>
+</ul>
+<br/>
+
+<b>Version 1.8.7</b>
+<ul>
+	<li><br/>- Now you can refresh on offline camera to bring it back online.<br/></li>
+</ul>
+<br/>
+
+<b>Version 1.8.6</b>
+<ul>
+	<li><br/>- Bug fix and improvements for the showcase view<br/></li>
+</ul>
+<br/>
+
+<b>Version 1.8.5</b>
+<ul>
+	<li><br/>- Bug fixes around account management<br/></li>
+	<li>- Fixed the issue of invisible PTZ control buttons<br/></li>
+	<li>- Added on boarding showcase<br/></li>
+</ul>
+<br/>
+
+<b>Version 1.8.4</b>
+<ul>
+	<li><br/>- Now you can switch accounts, show/hide offline cameras from the main menu<br/></li>
+</ul>
+<br/>
+
+<b>Version 1.8.3</b>
+<ul>
+	<li><br/>- Pinch zoom and drag on camera live view<br/></li>
+	<li>- Design changes around managing multiple accounts<br/></li>
+</ul>
+<br/>
+
+<b>Version 1.8.2</b>
+<ul>
+	<li><br/>- Reduced app size<br/></li>
+</ul>
+<br/>
+
+<b>Version 1.8.1</b>
+<ul>
+	<li><br/>- Fixed test snapshot<br/></li>
+	<li>- Removed 'Sign Out' option, you can manage multiple accounts in 'Accounts' <br/></li>
+</ul>
+<br/>
+
+<b>Version 1.8.0</b>
+<ul>
+	<li><br/>- Fixed a few issues for editing camera, eg. unable to delete saved port<br/></li>
+	<li>- Improved memory usage for camera live view <br/></li>
+    <li>- New design for welcome screen <br/></li>
+</ul>
+<br/>
+
+<b>Version 1.7.9</b>
+<ul>
+	<li><br/>- Bug fix of saved snapshot doesn't appear in Gallery<br/></li>
+</ul>
+<br/>
+
+<b>Version 1.7.8</b>
+<ul>
+	<li><br/>- Fixed the bug of always showing 'Port is closed' while adding camera<br/></li>
+</ul>
+<br/>
+
+<b>Version 1.7.7</b>
+<ul>
+	<li><br/>- New design for adding camera<br/></li>
+	<li>- Improved camera live view loading speed<br/></li>
+</ul>
+<br/>
+
+<b>Version 1.7.6</b>
+<ul>
+	<li><br/>- Fixed the live view scale issue for landscape<br/></li>
+</ul>
+<br/>
+
+<b>Version 1.7.4</b>
+<ul>
+	<li><br/>- Added public cameras<br/></li>
+	<li>- Now you can save image to your device from cloud recording<br/></li>
+</ul>
+<br/>
+
+<b>Version 1.7.3</b>
+<ul>
+	<li><br/>- Added live support<br/></li>
+	<li>- Fixed the crash with demo camera live view<br/></li>
+	<li>- Bug fixes<br/></li>
+</ul>
+<br/>
+
+<b>Version 1.6.9</b>
+<ul>
+	<li><br/>- Fixed the bug of unable to sign in with Email address<br/></li>
+	<li>- Fixed text overlap in login page<br/></li>
+</ul>
+<br/>
+
+<b>Version 1.6.8</b>
+<ul>
+	<li><br/>- Now you can easily send us a feedback if we couldn't recognise your camera after scanning<br/></li>
+</ul>
+<br/>
+
+<b>Version 1.6.5 - 1.6.7</b>
+<ul>
+	<li><br/>- Fixed the black screen issue when playing camera live view<br/></li>
+	<li>- Bug fix for saving camera snapshot on Android 6.0<br/></li>
+	<li>- Fixed a crash with QMobile devices<br/></li>
+	<li>- Option to show all network devices after scanning<br/></li>
+</ul>
+<br/>
+
+<b>Version 1.6.2 - 1.6.4</b>
+<ul>
+	<li><br/>- Browsing saved snapshots within the app<br/></li>
+	<li>- Options to share and delete saved snapshots<br/></li>
+	<li>- Sharing<br/></li>
+	<li>- Transfer camera ownership<br/></li>
+</ul>
+<br/>
+
+<b>Version 1.5.8 - 1.6.1</b>
+<ul>
+	<li><br/>- Check port is open/closed when add/edit camera<br/></li>
+    <li>- Forgot password<br/></li>
+    <li>- Fixed the bug of invisible PTZ control buttons<br/></li>
+    <li>- Renamed to 'Evercam'<br/></li>
+</ul>
+<br/>
+
+<b>Version 1.5.1 - 1.5.7</b>
+<ul>
+    <li><br/>- New design for scanning results<br/></li>
+    <li>- Added PTZ control for PTZ cameras<br/></li>
+    <li>- Material design<br/></li>
+    <li>- Bug fixes<br/></li>
+</ul>
+<br/>
+
+<b>Version 1.4.7 - 1.5.0</b>
+<ul>
+    <li><br/>- Added RTSP URL in add/edit camera<br/></li>
+    <li>- Now view,edit,delete camera options are all in 'Camera Settings'<br/></li>
+    <li>- Recognise camera that has been added when scanning for cameras<br/></li>
+    <li>- Fixed the 'country is missing' error with creating account<br/></li>
+    <li>- Fixed the app crash on Android 4.x devices<br/></li>
+</ul>
+<br/>
+
+<b>Version 1.4.1 - 1.4.6</b>
+<ul>
+    <li><br/>- Improved camera list loading speed<br/></li>
+    <li>- Now you can take snapshot from paused video<br/></li>
+    <li>- Removed Hikvision local storage<br/></li>
+    <li>- Improvements on network discovery, added ONVIF support<br/></li>
+    <li>- Fixed the crash while testing snapshot<br/></li>
+</ul>
+<br/>
+
+<b>Version 1.4</b>
+<ul>
+	<li><br/>- Show offline cameras on/off in Settings<br/></li>
+	<li>- Improved add & edit camera, removed local IP support<br/></li>
+    <li>- Improvements around taking snapshot and stream loading speed<br/></li>
+    <li>- Fix incorrect shortcut icon<br/></li>
+    <li>- More responsive desktop shortcut<br/></li>
+</ul>
+<br/>
+
+<b>Version 1.3</b>
+<ul>
+	<li><br/>- Browse recorded snapshots<br/></li>
+	<li>- Improved feedback and account management<br/></li>
+	<li>- Default camera per row to be 1 for new users<br/></li>
+</ul>
+<br/>
+<b>Version 1.2.8</b>
+<ul>
+	<li><br/>- Home screen shortcut link to single camera live view<br/></li>
+	<li>- Added Evercam account in Android account settings<br/></li>
+</ul>
+<br/>
+<b>Version 1.2.7</b>
+<ul>
+	<li><br/>- Added view camera details option in live view<br/></li>
+	<li>- Bug fixes around scanning for cameras<br/></li>
+</ul>
+<br/>
+<b>Version 1.2.4 - 1.2.6</b>
+<ul>
+	<li><br/>- Now you can take snapshots from your cameras and save them locally<br/></li>
+	<li>- Force landscape option in Settings<br/></li>
+	<li>- Bug fixes related to pause & play camera live view<br/></li>
+</ul>
+<br/>
+<b>Version 1.2.3</b>
+<ul>
+	<li><br/>- Port range check for add/edit camera<br/></li>
+	<li>- Added date & time to the camera live view screen<br/></li>
+	<li>- UI changes on camera grid view<br/></li>
+	<li>- Now you can send us feedback within the app<br/></li>
+</ul>
+<br/>
+<b>Version 1.2.2</b>
+<ul>
+	<li><br/>- Added warning dialog before leaving scanning screen<br/></li>
+	<li>- Fixed a crash during scanning with Android 4.4<br/></li>
+</ul>
+<br/>
+<b>Version 1.2.1</b>
+<ul>
+	<li><br/>- Fixed screen rotate issue when scanning for cameras<br/></li>
+	<li>- Added no thumbnail image in scanning result<br/></li>
+</ul>
+<br/>
+<b>Version 1.2.0</b>
+<ul>
+	<li><br/>- Improved scanning for cameras, it's now faster<br/></li>
+	<li>- Fixed bug with Hikvision local storage<br/></li>
+</ul>
+<br/>
+<b>Version 1.1.8 & 1.1.9</b>
+<ul>
+	<li><br/>- Camera list loading is faster now<br/></li>
+</ul>
+<br/>
+<b>Version 1.1.7</b>
+<ul>
+	<li><br/>- First version of Hikvision local storage, you can view previously recorded footage within the app<br/></li>
+</ul>
+<br/>
+<b>Version 1.1.6</b>
+<ul>
+	<li><br/>- Now you can remove cameras that are shared with you from your account<br/></li>
+</ul>
+<br/>
+<b>Version 1.1.5</b>
+<ul>
+	<li><br/>- Now we support more camera vendors & models<br/></li>
+</ul>
+<br/>
+<b>Version 1.1.4</b>
+<ul>
+	<li><br/>- When you add a camera, we now check whether we can connect to the camera before adding it<br/></li>
+	<li>- Bug fixes related to edit and remove camera.<br/></li>
+</ul>
+<br/>
+<b>Version 1.1.3</b>
+<ul>
+	<li><br/>- The camera list now loads faster<br /></li>
+	<li>- You can now see the details of cameras shared with you<br/></li>
+	<li>- When adding cameras, you can now test local & external snapshots<br/></li>
+	<li>- We've added a setting for screen sleep time<br/></li>
+	<li>- Many small bug fixes<br/></li>
+</ul>
+<br/>
+<b>Version 1.1.2</b>
+<ul>
+	<li><br/>- Add your IP camera<br /></li>
+	<li>- Vendor/model details are now pre-populated when adding a camera<br/></li>
+	<li>- Update or remove your connected IP cameras<br/></li>
+	<li>- Scan your local network for IP cameras<br/></li>
+	<li>- Supports digest authentication<br/></li>
+	<li>- Sign in with either your email or Evercam username<br/></li>
+	<li>- Now using thumbnails for scanned cameras<br/></li>
+</ul>
+<br />
+<b>Version 1.1.1</b>
+<br/>
+<ul>
+	<li>- You can now view multiple Evercam accounts<br/></li>
+	<li>- Added ability to choose number of cameras per row</li>
+</ul>
+
+<br/><br />Let us know what you think. Send any suggestions or feedback to play@evercam.io<br/>

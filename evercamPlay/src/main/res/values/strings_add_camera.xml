@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="evercam_id">Evercam ID*</string>
+    <string name="friendly_name">Name*</string>
+    <string name="vendor">Vendor</string>
+    <string name="model">Model</string>
+    <string name="select_model">Unknown/Other</string>
+    <string name="select_vendor">Unknown/Other</string>
+    <string name="credentials">Credentials</string>
+    <string name="external_host">IP address*</string>
+    <string name="colon">:</string>
+    <string name="external_title">External</string>
+    <string name="internal_title">Internal</string>
+    <string name="jpg_url">Snapshot*</string>
+    <string name="rtsp_url">RTSP URL</string>
+    <string name="http_port">HTTP port*</string>
+    <string name="rtsp_port">RTSP port</string>
+    <string name="finish_and_add">Finish &amp; Add</string>
+    <string name="save_changes">Save Changes</string>
+    <string name="test">Test</string>
+    <string name="title_edit_camera">Edit Camera</string>
+    <string name="hint_name">Rooftop Camera</string>
+    <string name="hint_username">Username</string>
+    <string name="hint_camera_password">Password</string>
+    <string name="hint_jpg_path">/snapshot.jpg</string>
+    <string name="hint_rtsp_path">/h264/ch1/main/av_stream</string>
+    <string name="hint_external_host">149.5.43.10</string>
+    <string name="hint_external_http">80</string>
+    <string name="hint_external_rtsp">554</string>
+    <string name="vendor_other">Other</string>
+    <string name="model_default">Default</string>
+    <string name="port_is_open">Port is open</string>
+    <string name="port_is_closed">Port is closed</string>
+
+    <!-- Messages -->
+    <string name="name_required">Please specify a friendly name for your camera</string>
+    <string name="creating_camera">Creating camera&#8230;</string>
+    <string name="testing_snapshot">Testing snapshot&#8230;</string>
+    <string name="patching_camera">Updating camera&#8230;</string>
+    <string name="create_success">Camera created</string>
+    <string name="patch_success">Camera settings updated</string>
+    <string name="unknown_error">Unknown error, please contact support.</string>
+    <string name="host_required">Please specify IP address or URL</string>
+    <string name="external_http_required">Please specify HTTP port</string>
+    <string name="msg_port_range_error">Port range must between 1 and 65535</string>
+    <string name="snapshot_test_port_closed">The IP address provided is not reachable at the port provided.</string>
+    <string name="msg_snapshot_test_failed">The port is open but we can\'t seem to connect. Check that the username and password are correct and the snapshot ending</string>
+    <string name="msg_snapshot_test_failed_new">The port is open but we can\'t seem to connect. Check that the camera model and credentials are correct.</string>
+    <string name="retrieving_snapshot">Retrieving snapshot&#8230;</string>
+    <string name="msg_confirm_create">We can\'t connect to your camera, are you sure you want to add it?</string>
+
+    <!-- Option Items -->
+    <string name="add_camera_manually">Add cameras manually</string>
+    <string name="scan_for_cameras">Scan for cameras</string>
+
+    <!-- View Camera Details -->
+    <string name="view_evercam_id">Evercam ID:</string>
+    <string name="view_owner">Owner:</string>
+    <string name="view_timezone">Timezone:</string>
+    <string name="view_friendly_name">Name:</string>
+    <string name="view_vendor">Vendor:</string>
+    <string name="view_model">Model:</string>
+    <string name="not_specified">Not specified</string>
+    <string name="view_username">Username:</string>
+    <string name="view_password">Password:</string>
+    <string name="view_snapshot_url">Snapshot:</string>
+    <string name="view_rtsp_url">RTSP URL:</string>
+    <string name="view_host">IP address:</string>
+    <string name="view_http">HTTP Port:</string>
+    <string name="view_rtsp">RTSP Port:</string>
+    <string name="button_text_edit">Edit Details</string>
+
+    <!-- New add camera designs -->
+    <string name="next_connect_camera">Next Step: Connect Camera</string>
+    <string name="next_name_camera">Next Step: Name Your Camera</string>
+    <string name="report_model">Report New Model</string>
+    <string name="public_ip">External IP (or URL)</string>
+    <string name="add_camera_http_port">HTTP Port</string>
+    <string name="add_camera_rtsp_port">RTSP Port(Optional)</string>
+    <string name="add_camera_snapshot_path">Snapshot Path</string>
+    <string name="add_camera_stream_path">RTSP Path(Optional)</string>
+    <string name="live_support">Live Support</string>
+    <string name="check_for_snapshot">Check For Snapshot</string>
+    <string name="requires_auth">Requires Authentication</string>
+    <string name="hint_cam_username">Username</string>
+    <string name="hint_cam_password">Password</string>
+    <string name="default_colon">Default:\u0020</string>
+    <string name="hint_name_your_camera">Camera Name (eg. Back Garden)</string>
+    <string name="done">Done</string>
+    <string name="slash">/</string>
+    <string name="checking_snapshot">Connecting</string>
+    <string name="choose_model_explain_title">Choose your vendor and model</string>
+    <string name="choose_model_explain_text">If you don\'t know the vendor and model of the camera you can leave it as \'Unknown/Other\'. If you know the vendor but not the model - choose the model \'Default\'.</string>
+    <string name="connect_camera_explain_message">Enter your camera details then we will try connecting to your camera.</string>
+    <string name="connect_camera_ip_message">Put the public URL or IP address of your camera. You will need to have setup port forwarding for your camera.</string>
+    <string name="connect_camera_http_message">The port should be a 2&#8211;5 digit number.\nThe default HTTP port is 80.</string>
+    <string name="connect_camera_rtsp_message">The port should be a 2&#8211;5 digit number.\nThe default RTSP port is 554.</string>
+    <string name="connect_camera_auth_message">Put your camera\'s username and password.\nIt\'s NOT the credentials for your Evercam account.</string>
+    <string name="connect_camera_snapshot_path_message">If you know your camera model we can work this out for you. Otherwise you have to enter it manually.\neg. snapshot.jpg</string>
+    <string name="connect_camera_rtsp_path_message">If you know your camera model we can work this out for you. Otherwise you have to enter it manually.\neg. h264/ch1/main/stream</string>
+
+</resources>

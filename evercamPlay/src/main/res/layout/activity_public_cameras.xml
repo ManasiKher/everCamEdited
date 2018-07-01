@@ -1,0 +1,14 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="io.evercam.androidapp.publiccameras.PublicCamerasWebActivity">
+
+    <io.evercam.androidapp.publiccameras.PublicCamerasWebView
+        android:id="@+id/public_cameras_webview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginRight="-10dip">
+
+    </io.evercam.androidapp.publiccameras.PublicCamerasWebView>
+</RelativeLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Material Design Navigation Drawer -->
+    <style name="NavDrawerRowLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@drawable/nav_drawer_row_item_background</item>
+        <item name="android:gravity">start|center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+
+    </style>
+
+    <style name="NavDrawerRowLayout.Main">
+        <item name="android:layout_height">@dimen/nav_drawer_item_row_height_scroll</item>
+    </style>
+
+    <style name="NavDrawerRowLayout.Main.Clickable">
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="NavDrawerRowLayout.Accounts">
+        <item name="android:layout_height">@dimen/nav_drawer_item_row_height_account</item>
+    </style>
+
+    <style name="NavDrawerRowLayout.Accounts.Clickable">
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="NavDrawerRowItemIcon">
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_marginLeft">@dimen/nav_drawer_vertical_keyline_icon_left</item>
+    </style>
+
+    <style name="NavDrawerRowItemIcon.Small">
+        <item name="android:layout_width">@dimen/nav_drawer_item_row_icon_size</item>
+        <item name="android:layout_height">@dimen/nav_drawer_item_row_icon_size</item>
+        <item name="android:tint">@color/nav_drawer_item_icon_normal</item>
+    </style>
+
+    <style name="NavDrawerRowItemIcon.Large">
+        <item name="android:layout_width">@dimen/nav_drawer_profile_image_size_small</item>
+        <item name="android:layout_height">@dimen/nav_drawer_profile_image_size_small</item>
+    </style>
+
+    <style name="NavDrawerRowItemText" parent="TextAppearance.AppCompat.Body2.Dark">
+        <item name="android:layout_gravity">start|center_vertical</item>
+    </style>
+
+    <style name="NavDrawerRowItemText.Margin" parent="TextAppearance.AppCompat.Body2">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">@color/evercam_text_dark</item>
+        <item name="android:layout_gravity">start|center_vertical</item>
+        <item name="android:layout_marginLeft">@dimen/nav_drawer_vertical_keyline_text_left</item>
+    </style>
+
+    <!-- Navigation drawer top level style -->
+    <style name="NavDrawerTopLevelStyle">
+        <item name="android:layout_width">260dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:fitsSystemWindows">true</item>
+        <item name="android:layout_gravity">start</item>
+    </style>
+
+    <!-- Drawer body style -->
+    <style name="NavDrawerBody">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/navigation_drawer_background</item>
+        <item name="android:paddingBottom">@dimen/nav_drawer_vertical_spacing_listing</item>
+        <item name="android:paddingTop">@dimen/nav_drawer_vertical_spacing_listing</item>
+    </style>
+
+</resources>

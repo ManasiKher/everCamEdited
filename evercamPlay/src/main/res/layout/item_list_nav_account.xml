@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/NavDrawerRowLayout.Accounts"
+    android:minHeight="@dimen/nav_drawer_item_row_height_account">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/drawer_account_user_image_view"
+        style="@style/NavDrawerRowItemIcon.Large" />
+
+    <TextView
+        android:id="@+id/drawer_account_user_textView"
+        style="@style/NavDrawerRowItemText.Margin"
+        android:text="@string/nav_drawer_add_account" />
+
+</FrameLayout>

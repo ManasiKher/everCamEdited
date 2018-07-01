@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/AccountItemTopLayout">
+
+    <ImageView
+        android:id="@+id/account_icon"
+        style="@style/AccountItemImage"
+        android:tint="@color/account_icon_tint"
+        android:src="@drawable/ic_user" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/account_icon"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/account_item_full_name"
+                style="@style/TextTitle" />
+
+            <TextView
+                android:id="@+id/account_item_username"
+                android:layout_marginLeft="10dp"
+                style="@style/TextSubTitle" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/account_item_email"
+            style="@style/TextSubTitle" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/account_item_status"
+        style="@style/AccountStatusText"
+        android:text="@string/str_default" />
+
+</RelativeLayout>

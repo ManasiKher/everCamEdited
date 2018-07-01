@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Evercam</string>
+    <string name="empty" />
+    <string name="user_agent_suffix">io.evercam.androidapp/1.0</string>
+    <string name="demo_camera_id">evercam-remembrance-camera</string>
+
+    <string name="google_api_key_maps">AIzaSyAXwqGkwI87v4YoSGCq0FStNXr0</string>
+    <string name="intercom_gcm_sender_id">461613501728</string>
+
+    <!-- General -->
+    <string name="cancel">Cancel</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="save">Save</string>
+    <string name="add">Add</string>
+    <string name="report">Report</string>
+    <string name="ok">OK</string>
+    <string name="notNow">NOT NOW</string>
+    <string name="settings_capital">SETTINGS</string>
+    <string name="delete">Delete</string>
+    <string name="remove">Remove</string>
+    <string name="prefix_http">http://</string>
+    <string name="dialog_title_warning">Warning</string>
+    <string name="view_capital">VIEW</string>
+    <string name="wifi">WiFi</string>
+    <string name="three_g">3G</string>
+    <string name="unknown">Unknown</string>
+
+    <!-- Preferences -->
+    <string name="title_general">GENERAL</string>
+    <string name="title_about">ABOUT</string>
+    <string name="title_version">Version</string>
+    <string name="title_camera_per_row">Cameras per row</string>
+    <string name="title_awake_time">Sleep</string>
+    <string name="prefs_never">Never</string>
+    <string name="summary_awake_time_prefix">After</string>
+    <string name="summary_awake_time_suffix">of inactivity</string>
+    <string name="title_force_landscape">Force landscape for live view</string>
+    <string name="show_offline_camera">Show offline cameras</string>
+    <string name="prefs_show_guide">Show app guide</string>
+    <string name="title_activity_public_cameras">Public Cameras</string>
+    <string name="forget_password_url">https://dash.evercam.io/v1/users/password-reset</string>
+    <string name="term_of_use_url">https://evercam.io/terms</string>
+    <string name="title_activity_recording_web">Cloud Recordings</string>
+    <string name="title_activity_about_web">About Evercam</string>
+    <string name="title_sharing">Who has access</string>
+    <string name="title_create_sharing">Share camera with</string>
+
+    <!-- Menu -->
+    <string name="menu_live_support">Live support</string>
+    <string name="menu_refresh">Refresh All</string>
+    <string name="title_activity_accounts">Accounts</string>
+    <string name="title_choose_model">Step 1 - Vendor &amp; Model</string>
+    <string name="title_connect_camera">Step 2 - Connect Camera</string>
+    <string name="title_name_camera">Step 3 - Name Your Camera</string>
+    <string name="title_activity_view_camera">Camera Details</string>
+    <string name="title_release_notes">Release Notes</string>
+    <string name="title_settings">Settings</string>
+    <string name="title_all_devices">All Devices</string>
+    <string name="title_saved_images">Saved Images</string>
+    <string name="menu_delete_camera">Remove Camera</string>
+    <string name="menu_edit_camera">Edit Camera</string>
+    <string name="menu_camera_settings">Camera Details</string>
+    <string name="menu_share">Sharing</string>
+    <string name="menu_view_snapshot">Saved Images</string>
+    <string name="menu_create_shortcut">Add to homescreen</string>
+    <string name="menu_remove_camera">Remove Camera</string>
+    <string name="menu_view_recordings">Cloud Recordings</string>
+    <string name="menu_cancel_scan">Cancel</string>
+    <string name="menu_show_all_device">Show other devices</string>
+    <string name="menu_create_share">Share with</string>
+    <string name="menu_transfer">Transfer</string>
+    <string name="menu_action_share">Share</string>
+    <string name="edit_camera_location">Edit Location</string>
+    <string name="save_camera_location">Save Location</string>
+
+    <!-- Intent action data-->
+    <string name="data_scheme">evercam</string>
+    <string name="data_host">cameras</string>
+    <string name="data_path">/streams</string>
+
+    <!-- PTZ -->
+    <string name="create_preset">Create a preset</string>
+    <string name="preset_name">Preset name</string>
+
+    <!-- Navigation Drawer -->
+    <string name="nav_drawer_offline">Show offline cameras</string>
+    <string name="nav_drawer_item_explore">Public cameras</string>
+    <string name="nav_drawer_feedback">Live Support</string>
+    <string name="nav_drawer_settings">Settings</string>
+    <string name="nav_drawer_scan">Scan for cameras</string>
+    <string name="nav_drawer_add_account">Add account</string>
+    <string name="nav_drawer_manage_accounts">Manage accounts</string>
+    <string name="navigation_drawer_opened">The navigation drawer is opened</string>
+    <string name="navigation_drawer_closed">The navigation drawer is closed</string>
+
+    <string name="showcase_demo_cam">Your demo camera</string>
+    <string name="showcase_dismiss_text">GOT IT</string>
+</resources>
+
