@@ -3,12 +3,7 @@
 
 Evercam allows connect your own IP cameras, public webcams and any Android devices that you use as an IP camera. It connects you to Evercam dashboard so that you can see all your cameras on your desktop as well. 
 
-| Name   | Evercam for Android|
-| --- | --- |
-| Owner   | [@Zulqarnain Mustafa](https://github.com/Zulqarnain-Mustafa)   |
-| Version  | 2.0.5 |
-| Evercam API Version  | 1.0  |
-| Licence | [AGPL](https://tldrlegal.com/license/gnu-affero-general-public-license-v3-%28agpl-3.0%29) |
+| Name   | Evercam for Android
 
 ## Features
 
